@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="start-screen" class="start-screen">
+            <h1>Welcome to the Quiz!</h1>
+            <p>Test your knowledge with these 10 questions</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="quiz-screen hide">
+            <div class="quiz-header">
+                <div class="question-count">Question <span id="question-number">1</span>/10</div>
+                <div class="timer">Time: <span id="time">60</span>s</div>
+                <div class="score">Score: <span id="current-score">0</span></div>
+            </div>
+            
+            <div id="question" class="question"></div>
+            <div id="options" class="options"></div>
+            
+            <button id="next-btn" class="btn hide">Next Question</button>
+        </div>
+
+        <div id="result-screen" class="result-screen hide">
+            <h1>Quiz Completed!</h1>
+            <p>Your final score is <span id="final-score">0</span>/10</p>
+            <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
